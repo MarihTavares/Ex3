@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action=""> 
+        <label for="nome1">Digite o nome:</label>
+        <br>
+        <input type="text" id="nome1">
+        <br>
+        <label for="qtd1">Digite a quantidade:</label>
+        <br>
+        <input type="text" id="qtd1">
+        <br>
+        <label for="vlr1">Digite o valor:</label>
+        <br>
+        <input type="text" id="vlr1">
+        <br><br><br>
+
+    </form>
+    <form action=""> 
+        <label for="nome2">Digite o nome:</label>
+        <br>
+        <input type="text" id="nome2">
+        <br>
+        <label for="qtd2">Digite a quantidade:</label>
+        <br>
+        <input type="text" id="qtd2">
+        <br>
+        <label for="vlr2">Digite o valor:</label>
+        <br>
+        <input type="text" id="vlr2">
+        <br><br><br>
+
+    </form>
+    <form action=""> 
+        <label for="nome3">Digite o nome:</label>
+        <br>
+        <input type="text" id="nome3">
+        <br>
+        <label for="qtd3">Digite a quantidade:</label>
+        <br>
+        <input type="text" id="qtd3">
+        <br>
+        <label for="vlr3">Digite o valor:</label>
+        <br>
+        <input type="text" id="vlr3">
+        <br><br><br>
+
+    </form>
+
+    <script>
+        function calcular(){
+       var qtd1=(document.getElementById('qtd1').value); 
+       var vlr1=(document.getElementById('vlr1').value); 
+       var total1 = qtd1*vlr1
+       document.getElementById("res").innerHTML= total1
+
+       var qtd2=(document.getElementById('qtd2').value); 
+       var vlr2=(document.getElementById('vlr2').value); 
+       var total2 = qtd2*vlr2
+       document.getElementById("res").innerHTML= total2
+
+       var qtd3=(document.getElementById('qtd3').value); 
+       var vlr3=(document.getElementById('vlr3').value); 
+       var total3 = qtd3*vlr3
+
+       var resultado = total1 + total2 + total3
+       document.getElementById("res").innerHTML= resultado
+    }
+    </script>
+    <input type="button" onclick="calcular()" value="calcular">
+    <h1 id="res">
+
+    </h1>
+</body>
+</html>
